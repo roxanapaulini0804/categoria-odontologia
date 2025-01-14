@@ -1,0 +1,278 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+
+.bloque3 {
+  background-color: #f3f3f3;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  .bloque3-title {
+    margin-bottom: 5rem;
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 350;
+      color: #000;
+      line-height: 1.2;
+      margin: 5rem auto;
+      
+
+      @include m.phone_320 {
+        font-size: 2.3rem;
+        width: 30rem;
+      }
+      
+      @include m.tablet_700 {
+        font-size: 2.5rem;
+        width: 45rem;
+      }
+
+      @include m.desktop_1000{
+        font-size: 2.8rem;
+        width: 45rem;
+      }
+
+      @include m.desktop_1020{
+        font-size: 2.9rem;
+        width: 50rem;
+      }
+      @include m.desktop_1200{
+        font-size: 2.9rem;
+        width: 50rem;
+      }
+     
+    }
+
+    span {
+      font-weight: bold;
+      color: inherit;
+    }
+  }
+
+  /* Contenedor general */
+  .bloque3-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+    
+  }
+
+  /* Carrusel móvil */
+  .carousel-movil {
+    display: flex;
+    overflow: hidden;
+    padding: 0 5rem;
+    
+
+    .swiper-wrapper {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+        gap: -2rem; /* Espaciado entre tarjetas */
+    }
+
+    .swiper-slide.card-movil {
+      flex: 0 0 auto;
+      width: 80%; /* Ancho flexible basado en el contenedor */
+      max-width: 250px; /* Máximo ancho para pantallas grandes */
+      height: 380px; /* Altura automática basada en el contenido */
+      margin: 0px 7px;
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      border-radius: 8px; /* Bordes redondeados */
+      overflow: hidden; /* Oculta el contenido desbordado */
+      text-align: left; /* Alineación del texto */
+      display: flex;
+      flex-direction: column;
+      
+    
+      img {
+        width: 100%; /* La imagen ocupa todo el ancho */
+        aspect-ratio: 16 / 9; /* Mantiene una proporción de 16:9 */
+        object-fit: cover; /* Asegura que la imagen no se deforme */
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+        .card-content-movil {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+
+            h4 {
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: #D53EFC;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 1.7rem;
+                font-weight: bold;
+                margin: 0;
+                color: #fff;
+                height: 10rem;
+            }
+
+            a {
+                font-size: 1.4rem;
+                margin-top: auto;
+                color: #fff;
+                justify-content: center;
+                text-align: center;
+                padding-top: 1.8rem;
+                display: flex;
+                flex-direction: column; 
+                align-items: center; 
+                font-family: "Poppins", sans-serif;
+            }
+
+            button {
+                font-size: 1.4rem;
+                padding: 0.5rem;
+                background-color: #ff0000;
+                color: black;
+                font-weight: 800;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 1rem;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column; 
+                margin-left: 3rem;
+                transition: background-color 0.3s ease;
+                font-family: "Poppins", sans-serif;
+
+               
+
+                
+            }
+        }
+    }
+}
+
+
+    .swiper-pagination {
+      bottom: 10px;
+      text-align: center;
+      padding-top:-5rem;
+      color: #fff;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: black;
+     
+    }
+  }
+
+  /* Grilla desktop */
+  .carousel-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+
+    .card-desktop {
+      background-color: #000;
+      color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      width: 250px;
+      height: 435px;
+
+      img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem; /* Reduce el espacio entre los elementos */
+
+        h4 {
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: #D53EFC;
+          margin: 0;
+          text-align: left;
+        }
+
+        h3 {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #fff;
+          margin: 0;
+          text-align: left;
+          height: 12rem;
+        }
+
+        a {
+          font-size: 1.5rem;
+          color: #fff;
+          
+          padding-top: 2rem;
+          display: flex;
+          flex-direction: column; 
+          align-items: center; 
+          font-family: "Poppins", sans-serif;
+
+          
+        }
+
+        button {
+          font-size: 1.4rem;
+          padding: 0.5rem 1rem;
+          background-color: #ff0000;
+          color: black;
+          font-weight: 700;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          margin-top: 1.3rem;
+          font-size: 1.5rem;
+          font-family: "Poppins", sans-serif;
+          
+         
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #cc0000;
+          }
+        }
+      }
+    }
+  }
+
+  /* Media queries */
+@media (max-width: 1020px) {
+  .bloque3 .carousel-desktop {
+    display: none !important; /* Fuerza a ocultar en móviles */
+  }
+
+  .bloque3 .carousel-movil {
+    display: flex !important; /* Fuerza a mostrar en móviles */
+  }
+}
+
+@media (min-width: 1020px) {
+  .bloque3 .carousel-movil {
+    display: none !important; /* Fuerza a ocultar en escritorio */
+  }
+
+  .bloque3 .carousel-desktop {
+    display: grid !important; /* Fuerza a mostrar en escritorio */
+  }
+}

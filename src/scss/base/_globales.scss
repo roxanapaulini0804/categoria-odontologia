@@ -1,0 +1,132 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    // overflow: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    height: auto;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, input, select, ul, li, label {
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+.elementor-container {
+  width: 100% !important;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px green; 
+  border-radius: 5px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: green; 
+}
+
+.bloqueFloat {
+  position: fixed;
+  // visibility: hidden !important;
+  visibility: visible;
+  height: auto;
+  width: 100%;
+  bottom: 2rem;
+  z-index: 999;
+  // text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  @include m.desktop_1020 {
+    display: none;
+  }
+  h3 {
+    width: 23rem;
+    background-color: black;
+    // height: 4rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    // padding-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 2px solid white;  // Borde blanco de 2px
+  }
+}
+
+.bloqueFloatActive {
+  visibility: hidden !important;
+}
+
+
+
+.bloqueFloat2 {
+  position: fixed;
+  visibility: hidden !important;
+  // visibility: visible;
+  height: auto;
+  width: 100%;
+  bottom: 2rem;
+  z-index: 999;
+  // text-align: center;
+  display: flex;
+  align-items: center;
+  //justify-content: flex-end;
+  justify-content: center ;
+  @include m.desktop_1020 {
+    //width: 98%;  
+    display: none !important;
+  }
+  h3 {
+    width: 23rem;
+    background-color: black;
+    // height: 4rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    // padding-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 2px solid white;  // Borde blanco de 2px
+  }
+}
+
+.bloqueFloatActive2 {
+  visibility: visible !important;
+  
+}
+  

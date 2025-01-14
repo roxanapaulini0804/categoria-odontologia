@@ -1,0 +1,305 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv='Expires' content='0')
+        meta(http-equiv='Last-Modified' content='0')
+        meta(http-equiv='Cache-Control' content='no-cache, mustrevalidate')
+        meta(http-equiv='Pragma' content='no-cache')
+        title Conversatorios Cayetano
+        link(rel="stylesheet", href="./css/app.css")
+        link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+        script(src='https://www.google.com/recaptcha/api.js' async='' defer='')
+        //- script(async).
+        //-     (function(h,o,t,j,a,r){
+        //-     h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        //-     h._hjSettings={hjid:3659234,hjsv:6};
+        //-     a=o.getElementsByTagName('head')[0];
+        //-     r=o.createElement('script');r.async=1;
+        //-     r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        //-     a.appendChild(r);
+        //-     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
+    
+    
+    body
+         
+
+        .bloque1
+           
+            .bloque1Container
+                .bloque1Background
+                    img.logoMobile(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="Logo Universidad Peruana Cayetano Heredia")
+                    //- https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_logo-scaled.webp
+                    //- img(src="img/beca18evento-logo.webp", alt="")
+                    img(src="", alt="")
+                    .bloque1LeftSubtitle
+                        
+                        h4  
+                            | Segundas
+                            br
+                            | Especialidades
+                            br
+                            | Profesionales en
+                                
+                        .h3Container
+                           
+                            h3 Tecnologías Médicas
+                    .bloque1LeftSubtitle1
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_logo2_top.webp", alt="")
+                        h3 Cierre de inscripciones
+                        h4 31 de enero
+                .bloque1FormContent
+                    //- img.bloque1FormContentMobile1(src="img/shield-mobile-1.webp", alt="")
+                    //- img.bloque1FormContentMobile2(src="img/shield-mobile-2.webp", alt="")
+                    //- img.bloque1FormContentMobile1(src=" ", alt="")
+                    //- img.bloque1FormContentMobile2(src="", alt="")
+                    //- h4 ¡Cerramos Inscripciones!
+                    //- .bloque1Form
+                    //-     .bloque1FormTitle
+                    //-         h3 Especialízate en
+                    //-             span  tu profesión
+                    //-         p Déjanos tus datos para brindarte una atención personalizada.
+                           
+                    //-     input(type="text" placeholder="Nombres*")
+                    //-     input(type="text" placeholder="Apellidos*")
+                    //-     input(type="text" placeholder="Correo*")
+                    //-     input.inputNumber(type="number" placeholder="Tipo de doc.*" inputmode="numeric")
+                        
+                    //-     input(type="text" placeholder="N.° de WhatsApp*")
+                    //-     input(type="text" placeholder="Selecciona tu especialidad*")
+                       
+                    //-     .bloque1TopFormContainer--terminos
+                    //-         input(type="checkbox", name="")
+                    //-         h3 Política de privacidad y términos de servicio.
+                    //-     .captcha
+                    //-         #recap3503766000237491098.g-recaptcha(data-sitekey='6LdqkDoiAAAAALdLtgIzFUQelkS9jGZU4W7gjLHG' data-theme='light' data-callback='rccallback3503766000237491098' captcha-verified='false')
+                    //-         #recapErr3503766000237491098(style='font-size:12px;color:red;visibility:hidden;') Error en validación de Captcha. Si no es un robot, inténtelo de nuevo.
+                    //-     .bloque1FormButton
+                    //-         button
+                    //-             h3 Quiero más información
+                    .bloque1Form
+                        img.logoForm(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="Logo Universidad Peruana Cayetano Heredia")
+                        .bloque1FormTitle
+                            h3 Especialízate en
+                                span  tu profesión
+                            p Déjanos tus datos para brindarte una atención personalizada.
+                        
+                        // Contenedor para Nombres y Apellidos
+                        .bloque1FormRow
+                            .bloque1FormColumn
+                                input(type="text" placeholder="Nombres*")
+                            .bloque1FormColumn
+                                input(type="text" placeholder="Apellidos*")
+                        
+                        input(type="text" placeholder="Correo*")
+                        input.inputNumber(type="number" placeholder="N.º de WhatsApp*" inputmode="numeric")
+                        
+                        // Contenedor para Tipo de Documento y Número de Documento
+                        .bloque1FormRow
+                            .bloque1FormColumn
+                                input(type="text" placeholder="Tipo de doc.*")
+                            .bloque1FormColumn
+                                input(type="text" placeholder="N.º de documento*")
+                        
+                        input(type="text" placeholder="Selecciona tu especialidad*")
+                        
+                        .bloque1TopFormContainer--terminos
+                            input(type="checkbox", name="")
+                            h3 Política de privacidad y términos de servicio.
+                        
+                        .captcha
+                            #recap3503766000237491098.g-recaptcha(data-sitekey='6LdqkDoiAAAAALdLtgIzFUQelkS9jGZU4W7gjLHG' data-theme='light' data-callback='rccallback3503766000237491098' captcha-verified='false')
+                            #recapErr3503766000237491098(style='font-size:12px;color:red;visibility:hidden;') Error en validación de Captcha. Si no es un robot, inténtelo de nuevo.
+                        
+                        .bloque1FormButton
+                            button
+                                h3 Enviar
+
+        .bloque2
+            .bloque2Container
+                img.bloqueCeleste(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/bloque-celeste-movil-bloque2.png", alt="Bloque celeste")
+                img.bloqueRojo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/bloque-rojo-movil-bloque2.png", alt="Bloque rojo")
+                h2 Potencia tus habilidades para devolver la funcionalidad corporal a quienes la han perdido por enfermedades o lesiones
+
+        .bloque3
+            .bloque3-title
+                h2  Conoce las Segundas Especialidades Profesionales de nuestra
+                    span  Facultad de Medicina
+
+                .bloque3-container
+                    // Carrusel móvil
+                    .carousel-movil.swiper
+                        .swiper-wrapper
+                            .swiper-slide.card-movil
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/movil-quemados.webp", alt="Fisioterapia en Quemados y Cirugía Plástica Reconstructiva y Estética")
+                                .card-content-movil
+                                    .text-container-movil
+                                        h4 Segunda Especialidad en 
+                                        h3 Fisioterapia en Quemados y Cirugía Plástica Reconstructiva y Estética
+                                        a(href="#") Ver programa →
+                                        button(onclick="scrollToForm()") Quiero inscribirme
+
+                                                        
+                            .swiper-slide.card-movil
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/movil-oncologica.webp", alt="Fisioterapia Oncológica")
+                                .card-content-movil
+                                    .text-container-movil
+                                        h4 Segunda Especialidad en 
+                                        h3 Fisioterapia Oncológica
+                                        a(href="#") Ver programa →
+                                        button(onclick="scrollToForm()") Quiero inscribirme
+
+                            .swiper-slide.card-movil
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/movil-resonancia-magnetica.webp", alt="Emergencias y Desastres")
+                                .card-content-movil
+                                    .text-container-movil
+                                        h4 Segunda Especialidad en 
+                                        h3 Tecnología en Resonancia Magnética
+                                        a(href="#") Ver programa →
+                                        button(onclick="scrollToForm()") Quiero inscribirme
+
+                            .swiper-slide.card-movil
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/movil-computarizada.webp", alt="Cuidados Nefrológicos")
+                                .card-content-movil
+                                    .text-container-movil
+                                        h4 Segunda Especialidad en 
+                                        h3 Tecnología en Tomografía Computarizada
+                                        a(href="#") Ver programa →
+                                        button(onclick="scrollToForm()") Quiero inscribirme
+
+                            
+                        .swiper-pagination
+                        .swiper-button-prev
+                        .swiper-button-next       
+                            
+                    // Grilla desktop
+                    .carousel-desktop
+                            .card-desktop
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/desktop-quemados.webp", alt="Fisioterapia en Quemados y Cirugía Plástica Reconstructiva y Estética")
+                                .card-content
+                                  .text-container
+                                    h4 Segunda Especialidad en
+                                    h3 Fisioterapia en Quemados y Cirugía Plástica Reconstructiva y Estética
+                                    a(href="#") Ver programa →
+                                    button(onclick="scrollToForm()") Quiero inscribirme
+                              
+                            .card-desktop
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/desktop-oncologica.webp", alt="Fisioterapia Oncológica")
+                                .card-content
+                                  .text-container
+                                    h4 Segunda Especialidad en
+                                    h3 Fisioterapia Oncológica
+                                    a(href="#") Ver programa →
+                                    button(onclick="scrollToForm()") Quiero inscribirme
+                                
+                            .card-desktop
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/rdesktop-resonancia-magnetica.webp", alt=" Tecnología en Resonancia Magnética")
+                                .card-content
+                                  .text-container
+                                    h4 Segunda Especialidad en
+                                    h3 Tecnología en Resonancia Magnética
+                                    a(href="#") Ver programa →
+                                    button(onclick="scrollToForm()") Quiero inscribirme
+                            .card-desktop
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/deskptop-tomagrafia-computarizada.webp", alt="Tecnología en Tomografía Computarizada")
+                                .card-content
+                                  .text-container
+                                    h4 Segunda Especialidad en
+                                    h3 Tecnología en Tomografía Computarizada
+                                    a(href="#") Ver programa →
+                                    button(onclick="scrollToForm()") Quiero inscribirme
+
+        .bloque5
+            .bloque5Container
+
+                // Título y subtítulo para desktop
+                .bloque5Left.bloque5Desktop
+                    .bloque5Title
+                        h2 
+                          | ¿Por qué elegir
+                          br
+                          | Cayetano 
+                        p Nuestros programas están diseñados para fortalecer tus competencias, enfocándote en la recuperación del bienestar físico de las personas y en el uso de tecnologías avanzadas para la detección, diagnóstico y seguimiento de enfermedades.
+
+                // Título y subtítulo para móvil
+                .bloque5Left.bloque5Mobile
+                    .bloque5Title
+                        h2 ¿Por qué elegir Cayetano?
+                        p 
+                          | Nuestros programas están diseñados para potenciar
+                          br 
+                          | tus habilidades y convertirte en un
+                          br 
+                          | referente en el cuidado de la salud.
+                // Contenido para desktop
+                .bloque5Content.bloque5Desktop
+                    .bloque5Item
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/62-anos-de-excelencia-1.webp", alt="62 años de excelencia")
+                        .bloque5Text
+                            h3 +62 años de excelencia académica.
+                            p Aprende de docentes destacados y activos en el sector.
+                    .bloque5Item
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/pasantias-nacionales-1.webp", alt="Pasantías")
+                        .bloque5Text
+                            h3 Pasantías nacionales e internacionales
+                            p Accede a experiencias en instituciones de prestigio que transformarán tu visión. 
+                    .bloque5Item
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/horarios-flexibles-1.webp", alt="Horarios flexibles")
+                        .bloque5Text
+                            h3 Horarios flexibles
+                            p Clases teóricas y prácticas en modalidad semipresencial.
+                
+                .bloque5Content.bloque5Mobile
+                    .carousel
+                        .carousel-track-container
+                            ul.carousel-track
+                                li.carousel-slide
+                                    .sliderItemInfo2
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/62-anos-de-excelencia-1.webp" alt="62 años de excelencia")
+                                        h3 +62 años de excelencia académica.
+                                        p Aprende de docentes destacados y activos en el sector.
+                                li.carousel-slide
+                                    .sliderItemInfo2
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/pasantias-nacionales-1.webp" alt="Pasantías")
+                                        h3 Pasantías nacionales e internacionales
+                                        p Accede a experiencias en instituciones de prestigio que transformarán tu visión. 
+                                li.carousel-slide
+                                    .sliderItemInfo2
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/horarios-flexibles-1.webp" alt="Horarios flexibles")
+                                        h3 Horarios flexibles
+                                        p Clases teóricas y prácticas en modalidad semipresencial.
+                                
+                        button.carousel-button.carousel-button-left 
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/flecha.png" alt="Flecha izquierda")
+                        button.carousel-button.carousel-button-right 
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/flecha-derecha.png" alt="Flecha derecha")                 
+                    
+                    
+        .bloque6
+            .bloque6Container
+                h2.bloque6Titulo ¡Alcanza el éxito profesional con
+                    br
+                    span La excelencia de Cayetano!
+                a.bloque6Boton(href="javascript:void(0)" onclick="scrollToForm()") Regístrate
+    
+
+
+         
+            
+
+
+
+
+
+        footer
+            .bloque8Top
+                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/footer_image1.webp", alt="")
+                img.bloque8Image(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/footer_image2.webp", alt="")
+            img.bloque8Image.bloque8Desktop(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/footer_image3-scaled.webp", alt="")
+        script(src="./js/script.js" async)
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")

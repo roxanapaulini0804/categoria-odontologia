@@ -1,0 +1,277 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* General */
+.bloque5 {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative; /* Asegura que todos los elementos se posicionen correctamente */
+    min-height: 450px; /* Ajusta la altura mínima del contenedor */
+}
+
+/* Título y subtítulo para móvil */
+.bloque5Left.bloque5Mobile {
+    display: flex; /* Visible solo en móvil */
+    flex-direction: column;
+    text-align: center; /* Centra el título y subtítulo */
+    max-width: 100%;
+    margin-bottom: 20px;
+    position: relative; /* Asegura que el título no se solape */
+}
+
+.bloque5Left.bloque5Mobile h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bloque5Left.bloque5Mobile p {
+    font-size: 12px;
+    
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Carrusel */
+.bloque5Mobile {
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px; /* Ajusta el ancho máximo del carrusel */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-slide {
+    min-width: 100%; /* Cada slide ocupa todo el ancho del contenedor */
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.carousel-slide .sliderItemInfo2 {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+    width: 60%; /* Ajusta el ancho del contenedor */
+    max-width: 300px; /* Define un ancho máximo */
+    height: auto; /* Permite que el contenido ajuste la altura */
+    margin: 0 auto; /* Centra el contenido dentro del slide */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.carousel-slide img {
+    max-width: 80px;
+    margin: 0 auto 15px;
+}
+
+.sliderItemInfo2 h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    width: 20rem;
+}
+
+.sliderItemInfo2 p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Botones de navegación */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.carousel-button-left {
+    left: 0.1px;
+}
+
+.carousel-button-right {
+    right:0.1px;
+}
+
+// .carousel-button:hover {
+//     background-color: rgba(255, 255, 255, 0.8);
+//     color: #000;
+// }
+
+/* Versión Desktop */
+.bloque5Content.bloque5Desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Reduce el espacio vertical */
+    margin-right: auto;
+    padding-left: 40rem; /* Reduce el padding izquierdo */
+    position: relative;
+    top: -28rem; /* Ajusta la posición vertical */
+    max-width:700px; /* Reduce el ancho máximo */
+    max-height:50px ; /* Reduce el ancho máximo */
+}
+
+.bloque5Content.bloque5Desktop .bloque5Item {
+    padding-bottom: 10px; /* Reduce el espaciado entre elementos */
+}
+
+.bloque5Content.bloque5Desktop .bloque5Item img {
+    width: 50px;
+    height: 50px; /* Ajusta el tamaño de las imágenes */
+}
+
+.bloque5Content.bloque5Desktop .bloque5Text h3 {
+    font-size: 16px; /* Ajusta el tamaño del título */
+}
+
+.bloque5Content.bloque5Desktop .bloque5Text p {
+    font-size: 12px; /* Ajusta el tamaño del párrafo */
+    line-height: 1.1; /* Ajusta el interlineado */
+    font-family: "Poppins", sans-serif;
+}
+
+.bloque5Content.bloque5Desktop .bloque5Item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #ccc; 
+}
+
+.bloque5Content.bloque5Desktop .bloque5Item img {
+    width: 60px;
+    height: 60px;
+}
+.bloque5Content.bloque5Desktop .bloque5Item:last-child {
+    border-bottom: none; 
+}
+.bloque5Content.bloque5Desktop .bloque5Text {
+    text-align: left;
+}
+
+.bloque5Content.bloque5Desktop .bloque5Text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.bloque5Content.bloque5Desktop .bloque5Text p {
+    font-size:12px;
+    margin: 0;
+    color:white;
+    line-height: 1.6rem;
+    width: 40rem;
+   
+}
+.bloque5Left.bloque5Desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 15px;
+    color: white;
+    
+    
+}
+
+.bloque5Left.bloque5Desktop h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    
+}
+
+.bloque5Left.bloque5Desktop p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: white;
+    width: 30rem;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+
+
+/* Media Queries */
+@media (max-width: 1019px) {
+    .bloque5Left.bloque5Desktop,
+    .bloque5Content.bloque5Desktop {
+        display: none; /* Oculta la versión desktop en pantallas pequeñas */
+    }
+
+    .bloque5Left.bloque5Mobile,
+    .bloque5Content.bloque5Mobile {
+        display: flex; /* Muestra la versión móvil */
+    }
+}
+
+@media (min-width: 1000px) {
+    .bloque5Left.bloque5Mobile,
+    .bloque5Content.bloque5Mobile {
+        display: none; /* Oculta la versión móvil en desktop */
+    }
+
+    .bloque5Left.bloque5Desktop,
+    .bloque5Content.bloque5Desktop {
+        display: flex; /* Muestra la versión desktop */
+    }
+}
+
+/* Fondo con triángulo rojo para desktop */
+@media (min-width: 1000px) {
+    .bloque5 {
+        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/triangulo-rojo-bloque5-desktop.png'); /* URL del triángulo rojo */
+        background-size: auto 125px; /* Ajustar el tamaño */
+        background-position: right bottom; /* Pegado al lado derecho inferior */
+        background-repeat: no-repeat; /* Evita que se repita la imagen */
+    }
+}

@@ -1,0 +1,102 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque6 {
+    background-color: #D53EFC; /* Fondo */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 40px 20px; 
+    text-align: center;
+}
+
+.bloque6Container {
+    max-width: 600px; 
+    width: 100%; 
+    padding: 20px; 
+    
+    border-radius: 10px; 
+    
+}
+
+.bloque6Titulo {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #ffffff; 
+    margin: 0 0 20px;
+}
+
+.bloque6Titulo span {
+    font-weight: bold; /* Negrita adicional */
+    
+}
+
+.bloque6Boton {
+    display: inline-block;
+    background-color: #000; /* Fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+    padding: 10px 20px; /* Tamaño del botón */
+    border-radius: 20px; /* Bordes redondeados */
+    font-weight: bold;
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 5px; /* Espacio superior */
+    font-family: "Poppins", sans-serif;
+
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 769px) {
+    .bloque6Container {
+        max-width: 700px; /* Aumentar el tamaño en pantallas grandes */
+        padding: 40px; /* Más espacio interno */
+    }
+
+    .bloque6Titulo {
+        font-size: 28px; /* Texto más grande */
+        
+    }
+
+    .bloque6Boton {
+        padding: 15px 30px; /* Botón más grande */
+        font-size: 18px; /* Texto del botón más grande */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .bloque6Container {
+        padding: 20px; /* Reducir el espaciado interno */
+    }
+
+    .bloque6Titulo {
+        font-size: 23px; /* Texto más pequeño */
+    }
+
+    .bloque6Boton {
+        padding: 10px 20px; /* Tamaño reducido del botón */
+    }
+}
+
+
+@media (min-width: 999px) {
+    .bloque6 {
+        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/bloque6-escudo-negro.png'); /* URL de la imagen */
+        background-size: contain; /* Ajustar el tamaño para que se adapte */
+        background-position: right center; /* Posicionar pegado al lado derecho */
+        background-repeat: no-repeat; /* No repetir la imagen */
+    }
+}
+
+@media (max-width: 999px) {
+    .bloque6 {
+        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/background-movile-bloque-6.png'); /* URL del background para móviles */
+        background-size: cover; /* Ajustar para que ocupe todo el contenedor */
+        background-position: center; /* Centrado */
+        background-repeat: no-repeat; /* Evitar repetición */
+    .bloque6Titulo {
+            color: #000; /* Cambiar el color del texto a negro */
+            
+    }
+}
+}

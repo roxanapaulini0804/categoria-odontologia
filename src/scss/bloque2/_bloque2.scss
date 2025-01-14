@@ -1,0 +1,95 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* Bloque dos */
+.bloque2 {
+  background-color: #000; /* Fondo negro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh; 
+  position: relative;
+  overflow: hidden; 
+}
+
+/* Contenedor dentro del bloque */
+.bloque2Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative; /* Necesario para posicionar las imágenes dentro */
+  z-index: 2; /* Asegura que el texto esté por encima de las imágenes */
+}
+
+/* Estilos del texto */
+.bloque2Container h2 {
+  color: #fff; 
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 400;
+  z-index: 3; 
+  @include m.phone_460 {
+    font-size:1.8rem ;
+    
+}
+@include m.tablet_700 {
+  font-size:2rem ;
+  width:45rem ;
+  
+}
+@include m.desktop_1000 {
+  font-size:2.3rem ;
+  width:55rem ;
+}
+
+
+}
+
+
+img.bloqueCeleste {
+  position: absolute;
+  top: -100px; 
+  right: -20px; 
+  width: 80px; /* Tamaño ajustado para móviles */
+  height: auto; /* Mantener proporciones */
+  display: none; /* Oculto por defecto */
+  z-index: 1; /* Detrás del texto */
+}
+
+
+img.bloqueRojo {
+  position: absolute; /* Permite posicionarlo en cualquier lugar */
+  bottom: -100px; /* Ajustar la posición inferior */
+  right: -20px; /* Alineado a la derecha */
+  width: 80px; /* Tamaño ajustado para móviles */
+  height: auto; /* Mantener proporciones */
+  display: none; /* Oculto por defecto */
+  z-index: 1; /* Detrás del texto */
+}
+
+/* Responsivo para pantallas móviles */
+@media (max-width: 1019px) {
+  img.bloqueCeleste {
+      display: block; /* Mostrar en móviles */
+  }
+
+  img.bloqueRojo {
+      display: block; /* Mostrar en móviles */
+  }
+}
+
+
+@media (min-width: 719px) {
+  .bloque2 {
+    background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/background-bloque2.webp');
+    background-size: contain; /* Ajusta el tamaño de la imagen */
+    background-position: right center; /* Pegado al lado derecho */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+  }
+
+  img.bloqueCeleste,
+  img.bloqueRojo {
+    display: none; /* Ocultar imágenes individuales en desktop */
+  }
+}

@@ -1,0 +1,804 @@
+@use "variables" as v;
+
+@mixin bgColor($color) {
+    background-color: $color;
+}
+
+//HEIGHT MEDIAQUERIES
+@mixin height_600 {
+    @media (min-height: v.$height_600){
+        @content;
+    }
+}
+
+@mixin height_620 {
+    @media (min-height: v.$height_620){
+        @content;
+    }
+}
+
+@mixin height_640 {
+    @media (min-height: v.$height_640){
+        @content;
+    }
+}
+
+@mixin height_660 {
+    @media (min-height: v.$height_660){
+        @content;
+    }
+}
+
+@mixin height_680 {
+    @media (min-height: v.$height_680){
+        @content;
+    }
+}
+
+@mixin height_700 {
+    @media (min-height: v.$height_700){
+        @content;
+    }
+}
+
+@mixin height_719 {
+    @media (min-height: v.$height_719){
+        @content;
+    }
+}
+
+@mixin height_720 {
+    @media (min-height: v.$height_720){
+        @content;
+    }
+}
+
+@mixin height_740 {
+    @media (min-height: v.$height_740){
+        @content;
+    }
+}
+
+@mixin height_760 {
+    @media (min-height: v.$height_760){
+        @content;
+    }
+}
+
+@mixin height_775 {
+    @media (min-height: v.$height_775){
+        @content;
+    }
+}
+
+@mixin height_780 {
+    @media (min-height: v.$height_780){
+        @content;
+    }
+}
+
+@mixin height_800 {
+    @media (min-height: v.$height_800){
+        @content;
+    }
+}
+
+@mixin height_820 {
+    @media (min-height: v.$height_820){
+        @content;
+    }
+}
+
+@mixin height_840 {
+    @media (min-height: v.$height_840){
+        @content;
+    }
+}
+
+@mixin height_860 {
+    @media (min-height: v.$height_860){
+        @content;
+    }
+}
+
+@mixin height_880 {
+    @media (min-height: v.$height_880){
+        @content;
+    }
+}
+
+@mixin height_900 {
+    @media (min-height: v.$height_900){
+        @content;
+    }
+}
+
+@mixin height_920 {
+    @media (min-height: v.$height_920){
+        @content;
+    }
+}
+
+@mixin height_940 {
+    @media (min-height: v.$height_940){
+        @content;
+    }
+}
+
+@mixin height_960 {
+    @media (min-height: v.$height_960){
+        @content;
+    }
+}
+
+@mixin height_980 {
+    @media (min-height: v.$height_980){
+        @content;
+    }
+}
+
+@mixin height_1000 {
+    @media (min-height: v.$height_1000){
+        @content;
+    }
+}
+
+@mixin height_1020 {
+    @media (min-height: v.$height_1020){
+        @content;
+    }
+}
+
+@mixin height_1040 {
+    @media (min-height: v.$height_1040){
+        @content;
+    }
+}
+
+@mixin height_1060 {
+    @media (min-height: v.$height_1060){
+        @content;
+    }
+}
+
+@mixin height_1080 {
+    @media (min-height: v.$height_1080){
+        @content;
+    }
+}
+
+@mixin height_1300 {
+    @media (min-height: v.$height_1300){
+        @content;
+    }
+}
+
+//HEIGHT MEDIAQUERIA FIN
+@mixin phone_300 {
+    @media (min-width: v.$phone_300) {
+        @content;
+    }
+}
+
+@mixin phone_320 {
+    @media (min-width: v.$phone_320) {
+        @content;
+    }
+}
+
+@mixin phone_340 {
+    @media (min-width: v.$phone_340) {
+        @content;
+    }
+}
+
+@mixin phone_360 {
+    @media (min-width: v.$phone_360) {
+        @content;
+    }
+}
+
+@mixin phone_375 {
+    @media (min-width: v.$phone_375) {
+        @content;
+    }
+}
+
+@mixin phone_380 {
+    @media (min-width: v.$phone_380) {
+        @content;
+    }
+}
+
+@mixin phone_390 {
+    @media (min-width: v.$phone_390) {
+        @content;
+    }
+}
+
+@mixin phone_400 {
+    @media (min-width: v.$phone_400) {
+        @content;
+    }
+}
+
+@mixin phone_414 {
+    @media (min-width: v.$phone_414) {
+        @content;
+    }
+}
+
+@mixin phone_420 {
+    @media (min-width: v.$phone_420) {
+        @content;
+    }
+}
+
+@mixin phone_428 {
+    @media (min-width: v.$phone_428) {
+        @content;
+    }
+}
+
+@mixin phone_440 {
+    @media (min-width: v.$phone_440) {
+        @content;
+    }
+}
+
+@mixin phone_460 {
+    @media (min-width: v.$phone_460) {
+        @content;
+    }
+}
+
+@mixin phone_480 {
+    @media (min-width: v.$phone_480) {
+        @content;
+    }
+}
+
+@mixin phone_500 {
+    @media (min-width: v.$phone_500) {
+        @content;
+    }
+}
+
+@mixin phone_520 {
+    @media (min-width: v.$phone_520) {
+        @content;
+    }
+}
+
+@mixin phone_540 {
+    @media (min-width: v.$phone_540) {
+        @content;
+    }
+}
+
+@mixin phone_560 {
+    @media (min-width: v.$phone_560) {
+        @content;
+    }
+}
+
+@mixin phone_580 {
+    @media (min-width: v.$phone_580) {
+        @content;
+    }
+}
+
+@mixin phone_600 {
+    @media (min-width: v.$phone_600) {
+        @content;
+    }
+}
+
+@mixin tablet_620 {
+    @media (min-width: v.$tablet_620) {
+        @content;
+    }
+}
+
+@mixin tablet_640 {
+    @media (min-width: v.$tablet_640) {
+        @content;
+    }
+}
+
+@mixin tablet_660 {
+    @media (min-width: v.$tablet_660) {
+        @content;
+    }
+}
+
+@mixin tablet_680 {
+    @media (min-width: v.$tablet_680) {
+        @content;
+    }
+}
+
+@mixin tablet_700 {
+    @media (min-width: v.$tablet_700) {
+        @content;
+    }
+}
+
+@mixin tablet_720 {
+    @media (min-width: v.$tablet_720) {
+        @content;
+    }
+}
+
+@mixin tablet_740 {
+    @media (min-width: v.$tablet_740) {
+        @content;
+    }
+}
+
+@mixin tablet_760 {
+    @media (min-width: v.$tablet_760) {
+        @content;
+    }
+}
+
+@mixin tablet_768 {
+    @media (min-width: v.$tablet_768) {
+        @content;
+    }
+}
+
+@mixin tablet_780 {
+    @media (min-width: v.$tablet_780) {
+        @content;
+    }
+}
+
+@mixin tablet_800 {
+    @media (min-width: v.$tablet_800) {
+        @content;
+    }
+}
+@mixin tablet_810 {
+    @media (min-width: v.$tablet_810) {
+        @content;
+    }
+}
+
+@mixin tablet_820 {
+    @media (min-width: v.$tablet_820) {
+        @content;
+    }
+}
+
+@mixin tablet_834 {
+    @media (min-width: v.$tablet_834) {
+        @content;
+    }
+}
+
+@mixin tablet_840 {
+    @media (min-width: v.$tablet_840) {
+        @content;
+    }
+}
+
+@mixin tablet_860 {
+    @media (min-width: v.$tablet_860) {
+        @content;
+    }
+}
+
+@mixin tablet_880 {
+    @media (min-width: v.$tablet_880) {
+        @content;
+    }
+}
+
+@mixin tablet_900 {
+    @media (min-width: v.$tablet_900) {
+        @content;
+    }
+}
+
+@mixin tablet_920 {
+    @media (min-width: v.$tablet_920) {
+        @content;
+    }
+}
+
+@mixin tablet_940 {
+    @media (min-width: v.$tablet_940) {
+        @content;
+    }
+}
+
+@mixin tablet_960 {
+    @media (min-width: v.$tablet_960) {
+        @content;
+    }
+}
+
+@mixin tablet_980 {
+    @media (min-width: v.$tablet_980) {
+        @content;
+    }
+}
+
+@mixin desktop_1000 {
+    @media (min-width: v.$desktop_1000) {
+        @content;
+    }
+}
+
+@mixin desktop_1020 {
+    @media (min-width: v.$desktop_1020) {
+        @content;
+    }
+}
+
+@mixin desktop_1024 {
+    @media (min-width: v.$desktop_1024) {
+        @content;
+    }
+}
+
+@mixin desktop_1040 {
+    @media (min-width: v.$desktop_1040) {
+        @content;
+    }
+}
+
+@mixin desktop_1060 {
+    @media (min-width: v.$desktop_1060) {
+        @content;
+    }
+}
+
+@mixin desktop_1080 {
+    @media (min-width: v.$desktop_1080) {
+        @content;
+    }
+}
+
+@mixin desktop_1100 {
+    @media (min-width: v.$desktop_1100) {
+        @content;
+    }
+}
+
+@mixin desktop_1114 {
+    @media (min-width: v.$desktop_1114) {
+        @content;
+    }
+}
+
+@mixin desktop_1116 {
+    @media (min-width: v.$desktop_1116) {
+        @content;
+    }
+}
+
+@mixin desktop_1120 {
+    @media (min-width: v.$desktop_1120) {
+        @content;
+    }
+}
+
+@mixin desktop_1140 {
+    @media (min-width: v.$desktop_1140) {
+        @content;
+    }
+}
+
+@mixin desktop_1160 {
+    @media (min-width: v.$desktop_1160) {
+        @content;
+    }
+}
+
+@mixin desktop_1180 {
+    @media (min-width: v.$desktop_1180) {
+        @content;
+    }
+}
+
+@mixin desktop_1200 {
+    @media (min-width: v.$desktop_1200) {
+        @content;
+    }
+}
+
+@mixin desktop_1220 {
+    @media (min-width: v.$desktop_1220) {
+        @content;
+    }
+}
+
+@mixin desktop_1240 {
+    @media (min-width: v.$desktop_1240) {
+        @content;
+    }
+}
+
+@mixin desktop_1260 {
+    @media (min-width: v.$desktop_1260) {
+        @content;
+    }
+}
+
+@mixin desktop_1280 {
+    @media (min-width: v.$desktop_1280) {
+        @content;
+    }
+}
+
+@mixin desktop_1300 {
+    @media (min-width: v.$desktop_1300) {
+        @content;
+    }
+}
+
+@mixin desktop_1320 {
+    @media (min-width: v.$desktop_1320) {
+        @content;
+    }
+}
+
+@mixin desktop_1340 {
+    @media (min-width: v.$desktop_1340) {
+        @content;
+    }
+}
+
+@mixin desktop_1360 {
+    @media (min-width: v.$desktop_1360) {
+        @content;
+    }
+}
+
+@mixin desktop_1380 {
+    @media (min-width: v.$desktop_1380) {
+        @content;
+    }
+}
+
+@mixin desktop_1400 {
+    @media (min-width: v.$desktop_1400) {
+        @content;
+    }
+}
+
+@mixin desktop_1420 {
+    @media (min-width: v.$desktop_1420) {
+        @content;
+    }
+}
+
+@mixin desktop_1440 {
+    @media (min-width: v.$desktop_1440) {
+        @content;
+    }
+}
+
+@mixin desktop_1460 {
+    @media (min-width: v.$desktop_1460) {
+        @content;
+    }
+}
+
+@mixin desktop_1480 {
+    @media (min-width: v.$desktop_1480) {
+        @content;
+    }
+}
+
+@mixin desktop_1500 {
+    @media (min-width: v.$desktop_1500) {
+        @content;
+    }
+}
+
+@mixin desktop_1520 {
+    @media (min-width: v.$desktop_1520) {
+        @content;
+    }
+}
+
+@mixin desktop_1540 {
+    @media (min-width: v.$desktop_1540) {
+        @content;
+    }
+}
+
+@mixin desktop_1560 {
+    @media (min-width: v.$desktop_1560) {
+        @content;
+    }
+}
+
+@mixin desktop_1580 {
+    @media (min-width: v.$desktop_1580) {
+        @content;
+    }
+}
+
+@mixin desktop_1600 {
+    @media (min-width: v.$desktop_1600) {
+        @content;
+    }
+}
+
+@mixin desktop_1620 {
+    @media (min-width: v.$desktop_1620) {
+        @content;
+    }
+}
+
+@mixin desktop_1640 {
+    @media (min-width: v.$desktop_1640) {
+        @content;
+    }
+}
+
+@mixin desktop_1660 {
+    @media (min-width: v.$desktop_1660) {
+        @content;
+    }
+}
+
+@mixin desktop_1680 {
+    @media (min-width: v.$desktop_1680) {
+        @content;
+    }
+}
+
+@mixin desktop_1700 {
+    @media (min-width: v.$desktop_1700) {
+        @content;
+    }
+}
+
+@mixin desktop_1720 {
+    @media (min-width: v.$desktop_1720) {
+        @content;
+    }
+}
+
+@mixin desktop_1740 {
+    @media (min-width: v.$desktop_1740) {
+        @content;
+    }
+}
+
+@mixin desktop_1760 {
+    @media (min-width: v.$desktop_1760) {
+        @content;
+    }
+}
+
+@mixin desktop_1780 {
+    @media (min-width: v.$desktop_1780) {
+        @content;
+    }
+}
+
+@mixin desktop_1800 {
+    @media (min-width: v.$desktop_1800) {
+        @content;
+    }
+}
+
+@mixin desktop_1820 {
+    @media (min-width: v.$desktop_1820) {
+        @content;
+    }
+}
+
+@mixin desktop_1840 {
+    @media (min-width: v.$desktop_1840) {
+        @content;
+    }
+}
+
+@mixin desktop_1860 {
+    @media (min-width: v.$desktop_1860) {
+        @content;
+    }
+}
+
+@mixin desktop_1880 {
+    @media (min-width: v.$desktop_1880) {
+        @content;
+    }
+}
+
+@mixin desktop_1900 {
+    @media (min-width: v.$desktop_1900) {
+        @content;
+    }
+}
+
+@mixin desktop_1920 {
+    @media (min-width: v.$desktop_1920) {
+        @content;
+    }
+}
+
+@mixin desktop_1940 {
+    @media (min-width: v.$desktop_1940) {
+        @content;
+    }
+}
+
+@mixin desktop_1960 {
+    @media (min-width: v.$desktop_1960) {
+        @content;
+    }
+}
+
+@mixin desktop_1980 {
+    @media (min-width: v.$desktop_1980) {
+        @content;
+    }
+}
+
+@mixin desktop_2000 {
+    @media (min-width: v.$desktop_2000) {
+        @content;
+    }
+}
+
+@mixin desktop_2048 {
+    @media (min-width: v.$desktop_2048) {
+        @content;
+    }
+}
+
+@mixin desktop_2240 {
+    @media (min-width: v.$desktop_2240) {
+        @content;
+    }
+}
+
+@mixin desktop_2304 {
+    @media (min-width: v.$desktop_2304) {
+        @content;
+    }
+}
+
+@mixin desktop_2560 {
+    @media (min-width: v.$desktop_2560) {
+        @content;
+    }
+}
+
+@mixin desktop_3200 {
+    @media (min-width: v.$desktop_3200) {
+        @content;
+    }
+}
+
+@mixin desktop_3840 {
+    @media (min-width: v.$desktop_3840) {
+        @content;
+    }
+}
+
+@mixin grid-column($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+
+@mixin grid-row($filas, $espaciado) {
+    display: grid;
+    grid-template-rows: repeat($filas, 1fr);
+    gap: $espaciado;
+}
+
+@mixin grid_minmax($ancho, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($ancho, auto));
+    gap: $espaciado;
+}

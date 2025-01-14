@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+
+
+
+footer {
+    background-color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    @include m.desktop_1020 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 6rem;
+    }
+    .bloque8Top {
+        width: 100%; /* Asegura que ocupe solo el ancho disponible */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include m.desktop_1020 {
+        width: auto; /* Ajusta el ancho en pantallas grandes */
+        flex-direction: row;
+        column-gap: 2rem;
+        }
+    }
+    img {
+        width: auto;
+        height: 3.5rem !important;
+    }
+    .bloque8Image {
+        height: auto; /* Ajusta la altura automáticamente */
+        max-height: 5rem; /* Limita la altura máxima */
+        @include m.desktop_1020 {
+            max-height: 5rem;
+        }
+    }
+    .bloque8Desktop {
+        @include m.desktop_1020 {
+            height: 6.5rem !important;
+        }
+    }
+}
