@@ -14,7 +14,7 @@
 
 .bloque1Container {
     @include m.desktop_1020 {
-        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/tecnologia-medica-portada.webp');
+        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/portada-estomatologia-desktop.webp');
         background-size: cover;
         background-position: center;
         background-repeat: none;
@@ -38,7 +38,7 @@
 
 .bloque1Background {
     // background-image: url('../img/beca18-simulacro-image-top-mobile.webp');
-    background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/portada-categoria-tecnologia-medica.webp');
+    background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/portad-estomatologia-movile.webp');
     background-size: cover;
     background-position: center;
     background-repeat: none;
@@ -369,7 +369,7 @@ input {
 }
 .h3Container h3 {
     position: absolute; 
-    top:-1rem;
+    // top:-1rem;
     width: 2rem;
     margin: 0;
     font-weight: 700; 
@@ -407,13 +407,13 @@ input {
     flex-direction: column;
     row-gap: 0.3rem;
     position: relative;
-    top: 7rem; // Ajusta según necesites
-    @include m.tablet_768 {
-        top: 6rem; 
-    }
-    @include m.desktop_1200 {
-        top: 6rem; 
-    }
+    top: 1rem; // Ajusta según necesites
+    // @include m.tablet_768 {
+    //     top: 3rem; 
+    // }
+    // @include m.desktop_1200 {
+    //     top: 6rem; 
+    // }
     
 
     img {
