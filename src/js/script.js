@@ -1,4 +1,4 @@
-window.onload = () => {
+(function () {
     const track = document.querySelector(".carousel-track");
     const slides = Array.from(track.children);
     const nextButton = document.querySelector(".carousel-button-right");
@@ -6,23 +6,19 @@ window.onload = () => {
 
     if (!track || slides.length === 0 || !nextButton || !prevButton) {
         console.error("Error: Elementos del carrusel no encontrados o incompletos.");
-        return;
+        return; // Ahora es válido porque está dentro de una función
     }
 
+    // Configurar la posición inicial de los slides
+    let currentSlide = 0;
     const calculateSlideWidth = () => slides[0].offsetWidth;
 
     const setSlidePositions = () => {
-        track.style.transition = "none"; // Evitar transiciones bruscas
         const slideWidth = calculateSlideWidth();
         slides.forEach((slide, index) => {
             slide.style.left = `${slideWidth * index}px`;
         });
-        track.style.transition = ""; // Restaurar transición
     };
-
-    setSlidePositions();
-
-    let currentSlide = 0;
 
     const moveToSlide = (index) => {
         const slideWidth = calculateSlideWidth();
@@ -30,24 +26,24 @@ window.onload = () => {
         currentSlide = index;
     };
 
+    // Configurar eventos para los botones
     nextButton.addEventListener("click", () => {
-        const nextSlide = (currentSlide + 1) % slides.length;
+        const nextSlide = currentSlide + 1 < slides.length ? currentSlide + 1 : 0;
         moveToSlide(nextSlide);
     });
 
     prevButton.addEventListener("click", () => {
-        const prevSlide = (currentSlide - 1 + slides.length) % slides.length;
+        const prevSlide = currentSlide - 1 >= 0 ? currentSlide - 1 : slides.length - 1;
         moveToSlide(prevSlide);
     });
 
-    const autoplayInterval = 7000; // Cambia cada 5 segundos
-    setInterval(() => {
-        const nextSlide = (currentSlide + 1) % slides.length;
-        moveToSlide(nextSlide);
-    }, autoplayInterval);
-
+    // Ajustar posiciones al redimensionar la ventana
     window.addEventListener("resize", setSlidePositions);
-};
+
+    // Inicializar las posiciones de los slides
+    setSlidePositions();
+})();
+
 
 
 // Inicialización de Swiper para bloque3

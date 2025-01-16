@@ -115,20 +115,34 @@
 
 /* Botones de navegación */
 .carousel-button {
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // background-color: rgba(0, 0, 0, 0.5);
+    // color: #fff;
+    // border: none;
+    // width: 40px;
+    // height: 40px;
+    // border-radius: 50%;
+    // cursor: pointer;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // z-index: 10;
+    all: unset;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    border: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
+    cursor: pointer;
 }
 
 .carousel-button-left {
