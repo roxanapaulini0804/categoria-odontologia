@@ -122,7 +122,7 @@ html(lang="es")
 
         .bloque2
             .bloque2Container
-                img.bloqueCeleste(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/bloque-celeste-movil-bloque2.png", alt="Bloque celeste")
+                img.bloqueCeleste(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/triangulo-azul-categoria-estomatologia.png", alt="Bloque celeste")
                 img.bloqueRojo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/bloque-rojo-movil-bloque2.png", alt="Bloque rojo")
                 h2 Desarrolla competencias avanzadas en Estomatología para brindar atención integral y liderar el cuidado de la salud bucal.
 
@@ -133,7 +133,7 @@ html(lang="es")
 
                 .bloque3-container
                     // Carrusel móvil
-                    .carousel-movil.swiper
+                    .carousel-movil.swiper-bloque3
                         .swiper-wrapper
                             .swiper-slide.card-movil
                                 img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/endodoncia-copia.webp", alt="Fisioterapia en Quemados y Cirugía Plástica Reconstructiva y Estética")
@@ -241,9 +241,9 @@ html(lang="es")
                             
 
                             
-                        .swiper-pagination
-                        .swiper-button-prev
-                        .swiper-button-next       
+                    .swiper-pagination-bloque3
+                    .swiper-button-prev-bloque3
+                    .swiper-button-next-bloque3       
                             
                     // Grilla desktop
                     .carousel-desktop
@@ -363,54 +363,50 @@ html(lang="es")
                 .bloque5Left.bloque5Mobile
                     .bloque5Title
                         h2 ¿Por qué elegir Cayetano?
-                        p 
-                          | Nuestros programas están diseñados para potenciar tus habilidades en el diagnóstico y 
-                          br 
-                          | tratamiento de lesiones, patologías y alteraciones de la región bucomaxilofacial, impulsándote a 
-                          br 
-                          | convertirte en un referente en el cuidado integral de la salud bucal.
+                        p  Nuestros programas están diseñados para potenciar tus habilidades en el diagnóstico y tratamiento de lesiones, patologías y alteraciones de la región bucomaxilofacial, impulsándote a convertirte en un referente en el cuidado integral de la salud bucal.
+
+                         
                 // Contenido para desktop
                 .bloque5Content.bloque5Desktop
                     .bloque5Item
-                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/62-anos-de-excelencia-1.webp", alt="62 años de excelencia")
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/62-de-excelencia.webp", alt="62 años de excelencia")
                         .bloque5Text
                             h3 +62 años de excelencia académica.
                             p Aprende de docentes destacados y activos en el sector.
                     .bloque5Item
-                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/pasantias-nacionales-1.webp", alt="Pasantías")
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/top-1-ciencias.webp", alt="Pasantías")
                         .bloque5Text
-                            h3 Pasantías nacionales e internacionales
-                            p Accede a experiencias en instituciones de prestigio que transformarán tu visión. 
+                            h3 TOP 1 en Ciencias de la Vida & Medicina en Perú
+                            p Fuente: QS World University Rankings by Subject 2024: Life Sciences & Medicine
                     .bloque5Item
-                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/horarios-flexibles-1.webp", alt="Horarios flexibles")
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/rotaciones.webp", alt="Horarios flexibles")
                         .bloque5Text
-                            h3 Horarios flexibles
-                            p Clases teóricas y prácticas en modalidad semipresencial.
+                            h3 Rotaciones y pasantías nacionales e internacionales 
+                            p En instituciones con las que tenemos convenio.
                 
-                .bloque5Content.bloque5Mobile
-                    .carousel
-                        .carousel-track-container
-                            ul.carousel-track
-                                li.carousel-slide
-                                    .sliderItemInfo2
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/62-anos-de-excelencia-1.webp" alt="62 años de excelencia")
-                                        h3 +62 años de excelencia académica.
-                                        p Aprende de docentes destacados y activos en el sector.
-                                li.carousel-slide
-                                    .sliderItemInfo2
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/pasantias-nacionales-1.webp" alt="Pasantías")
-                                        h3 Pasantías nacionales e internacionales
-                                        p Accede a experiencias en instituciones de prestigio que transformarán tu visión. 
-                                li.carousel-slide
-                                    .sliderItemInfo2
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/horarios-flexibles-1.webp" alt="Horarios flexibles")
-                                        h3 Horarios flexibles
-                                        p Clases teóricas y prácticas en modalidad semipresencial.
-                                
-                        button.carousel-button.carousel-button-left 
-                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/flecha.png" alt="Flecha izquierda")
-                        button.carousel-button.carousel-button-right 
-                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/flecha-derecha.png" alt="Flecha derecha")                 
+                .bloque5Content.bloque5Mobile.swiper-bloque5
+                    .swiper-wrapper
+                        .swiper-slide
+                            .sliderItemInfo2
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/62-anos-de-excelencia-1.webp", alt="62 años de excelencia")
+                                h3 +62 años de excelencia académica.
+                                p Aprende de docentes destacados y activos en el sector.
+                        .swiper-slide
+                            .sliderItemInfo2
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/pasantias-nacionales-1.webp", alt="Pasantías")
+                                h3 Pasantías nacionales e internacionales
+                                p Accede a experiencias en instituciones de prestigio que transformarán tu visión.  
+                        .swiper-slide
+                            .sliderItemInfo2
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/horarios-flexibles-1.webp", alt="Horarios flexibles")
+                                h3 Líderes en investigación
+                                p Somos la universidad peruana N.º 1 en 
+                                  br 
+                                  | investigación por 6.º año consecutivo.
+
+                .swiper-pagination-bloque5
+                .swiper-button-prev-bloque5
+                .swiper-button-next-bloque5                 
                     
                     
         .bloque6

@@ -13,26 +13,31 @@
     text-align: center;
 
     h2 {
-      font-size: 2rem;
+      
       font-weight: 350;
       color: #000;
       line-height: 1.2;
       margin: 5rem auto;
+      width: 30rem;
       
 
       @include m.phone_320 {
-        font-size: 2.3rem;
-        width: 30rem;
+        font-size: 1.9rem;
+        
+       
       }
       
       @include m.tablet_700 {
-        font-size: 2.5rem;
-        width: 35rem;
+        font-size:2.5rem;
+        width: 40rem;
+        
+        
       }
 
       @include m.desktop_1000{
         font-size: 2.8rem;
-        width: 50rem
+        width: 50rem;
+        
       }
 
       
@@ -112,7 +117,7 @@
             }
 
             a {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 margin-top: auto;
                 color: #fff;
                 justify-content: center;
@@ -125,7 +130,8 @@
             }
 
             button {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
+                
                 padding: 0.5rem;
                 background-color: #ff0000;
                 color: black;
@@ -150,20 +156,45 @@
     }
 }
 
+.swiper-pagination-bloque3 {
+  position: absolute;
 
-    .swiper-pagination {
-      bottom: 10px;
-      text-align: center;
-      padding-top:-5rem;
-      color: #fff;
-      
-    }
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; 
+  margin-bottom: -30px;
 
-    .swiper-button-prev,
-    .swiper-button-next {
-      color: black;
-     
-    }
+ 
+ 
+}
+
+/* Estilo para los puntos de paginación */
+.swiper-pagination-bloque3 .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: black; 
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+/* Punto activo */
+.swiper-pagination-bloque3 .swiper-pagination-bullet-active {
+  background-color:red;
+  transform: scale(1.2); /* Tamaño más grande para el punto activo */
+  opacity: 1;
+}
+
+  
+  
+  
+  
+  
   }
 
   /* Grilla desktop */
@@ -262,11 +293,29 @@
 }
 
 @media (min-width: 1020px) {
-  .bloque3 .carousel-movil {
+  .bloque3 .carousel-movil  {
     display: none !important; /* Fuerza a ocultar en escritorio */
   }
 
   .bloque3 .carousel-desktop {
     display: grid !important; /* Fuerza a mostrar en escritorio */
+  }
+}
+
+/* Mostrar los controles del carrusel en móviles */
+@media (max-width: 1020px) {
+  .swiper-pagination,
+  .swiper-button-prev,
+  .swiper-button-next {
+      display: block !important; /* Mostrar en pantallas pequeñas */
+  }
+}
+
+/* Ocultar los controles del carrusel en desktop */
+@media (min-width: 1021px) {
+  .swiper-pagination,
+  .swiper-button-prev,
+  .swiper-button-next {
+      display: none !important; /* Ocultar en pantallas grandes */
   }
 }
